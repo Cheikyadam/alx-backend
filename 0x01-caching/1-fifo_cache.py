@@ -8,7 +8,7 @@ class FIFOCache(BaseCaching):
     def put(self, key, item):
         """put method"""
         if key is not None and item is not None:
-            if len(self.cache_data) > BaseCaching.MAX_ITEMS:
+            if len(self.cache_data) >= BaseCaching.MAX_ITEMS:
                 keys = list(self.cache_data.keys())
                 del self.cache_data[keys[0]]
                 print(f"DISCARD: {keys[0]}")
