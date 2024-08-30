@@ -1,5 +1,5 @@
 import { createClient, print } from 'redis';
-const { promisify } = require('util');
+import { promisify } from 'util';
 
 const client = createClient();
 
