@@ -49,7 +49,7 @@ const jobs = [
 ];
 
 for (const curJob of jobs) {
-  const job =  queue.create('push_notification_code2', curJob)
+  const job =  queue.create('push_notification_code_2', curJob)
   .save((err) => {
     if (err) {
       console.error('Error creating job:', err);
